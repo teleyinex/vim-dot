@@ -22,3 +22,6 @@
 [submodule "bundle/vim-rainbow-parenthesis"]
 	path = bundle/vim-rainbow-parenthesis
 	url = https://github.com/nablaa/vim-rainbow-parenthesis.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
