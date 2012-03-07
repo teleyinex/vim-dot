@@ -5,7 +5,7 @@ filetype plugin indent on
 
 set nocompatible
 
-colorscheme clouds
+colorscheme molokai
 
 set tabstop=4
 set shiftwidth=4
@@ -29,7 +29,7 @@ set laststatus=2
 "set relativenumber
 "set undofile
 
-set wrap
+set wrap linebreak nolist
 set textwidth=79
 set formatoptions=qrn1
 "set colorcolumn=85
@@ -40,3 +40,20 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText ctermfg=gray
 highlight SpecialKey ctermfg=gray
 
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+vmap <C-j> gj
+vmap <C-k> gk
+vmap <C-4> g$
+vmap <C-6> g^
+vmap <C-0> g^
+nmap <C-j> gj
+nmap <C-k> gk
+nmap <C-4> g$
+nmap <C-6> g^
+nmap <C-0> g^
+
+"Spell checking"¬
+map <F6> <Esc>:setlocal spell spelllang=en_us<CR>¬
+map <F7> <Esc>:setlocal nospell<CR>¬
+map <F12> ]s¬     
