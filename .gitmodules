@@ -43,6 +43,4 @@
 [submodule "bundle/snippets-bib"]
 	path = bundle/snippets-bib
 	url = git://github.com/rbonvall/snipmate-snippets-bib.git
-[submodule "bundle/vim-pyunit"]
-	path = bundle/vim-pyunit
-	url = git://github.com/nvie/vim-pyunit.git
+
