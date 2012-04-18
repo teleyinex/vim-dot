@@ -43,3 +43,9 @@
 [submodule "bundle/snippets-bib"]
 	path = bundle/snippets-bib
 	url = git://github.com/rbonvall/snipmate-snippets-bib.git
+[submodule "bundle/vim-makegreen"]
+	path = bundle/vim-makegreen
+	url = git://github.com/reinh/vim-makegreen.git
+[submodule "bundle/nose.vim"]
+	path = bundle/nose.vim
+	url = git://github.com/vim-scripts/nose.vim.git
