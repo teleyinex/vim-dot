@@ -54,6 +54,9 @@ nmap <C-6> g^
 nmap <C-0> g^
 
 "Spell checking"¬
-map <F6> <Esc>:setlocal spell spelllang=en_us<CR>¬
-map <F7> <Esc>:setlocal nospell<CR>¬
-map <F12> ]s¬     
+map <F6> <Esc>:setlocal spell spelllang=en_us<CR>
+map <F7> <Esc>:setlocal nospell<CR>
+map <F12> ]s
+
+autocmd BufNewFile,BufRead test_*.py compiler nose
+map <F8> :call MakeGreen(' --nosered % ')<CR>
