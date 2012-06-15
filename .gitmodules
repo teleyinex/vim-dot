@@ -46,3 +46,9 @@
 [submodule "bundle/nose.vim"]
 	path = bundle/nose.vim
 	url = git://github.com/vim-scripts/nose.vim.git
+[submodule "bundle/vim-sparkup"]
+	path = bundle/vim-sparkup
+	url = https://github.com/tristen/vim-sparkup.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git

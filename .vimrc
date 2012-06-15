@@ -26,13 +26,13 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-"set relativenumber
-"set undofile
+set relativenumber
+set undofile
 
 set wrap linebreak nolist
 set textwidth=79
 set formatoptions=qrn1
-"set colorcolumn=85
+set colorcolumn=85
 
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -60,3 +60,6 @@ map <F12> ]s
 
 autocmd BufNewFile,BufRead test_*.py compiler nose
 map <F8> :call MakeGreen(' --nosered % ')<CR>
+
+"Git-Fugitive
+set statusline=%{fugitive#statusline()}
