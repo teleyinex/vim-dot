@@ -5,7 +5,9 @@ filetype plugin indent on
 
 set nocompatible
 
-colorscheme molokai
+set background=dark
+colorscheme solarized
+set t_Co=256
 
 set tabstop=4
 set shiftwidth=4
@@ -63,3 +65,14 @@ map <F8> :call MakeGreen(' --nosered % ')<CR>
 
 "Git-Fugitive
 set statusline=%{fugitive#statusline()}
+"Vim-powerline
+set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
+let g:Powerline_symbols = 'fancy'
+
+"Vim-javascript
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+"Vim-pydiction
+let g:pydiction_location = 'bundle/pydiction/complete-dict'
