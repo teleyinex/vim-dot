@@ -1,3 +1,8 @@
+" automatically reload vimrc when it's saved
+au BufWritePost .vimrc so ~/.vimrc
+
+let mapleader = ","
+
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
@@ -44,16 +49,16 @@ highlight SpecialKey ctermfg=gray
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
-vmap <C-j> gj
-vmap <C-k> gk
-vmap <C-4> g$
-vmap <C-6> g^
-vmap <C-0> g^
-nmap <C-j> gj
-nmap <C-k> gk
-nmap <C-4> g$
-nmap <C-6> g^
-nmap <C-0> g^
+nnoremap j gj
+nnoremap k gk
+
+vnoremap < <gv
+vnoremap > >gv
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "Spell checking"¬
 map <F6> <Esc>:setlocal spell spelllang=en_us<CR>
@@ -61,7 +66,7 @@ map <F7> <Esc>:setlocal nospell<CR>
 map <F12> ]s
 
 autocmd BufNewFile,BufRead test_*.py compiler nose
-map <F8> :call MakeGreen(' --nosered % ')<CR>
+"map <F8> :call MakeGreen(' --nosered % ')<CR>
 
 "Git-Fugitive
 set statusline=%{fugitive#statusline()}
@@ -75,4 +80,10 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 "Vim-pydiction
-let g:pydiction_location = 'bundle/pydiction/complete-dict'
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+
+"ctrlp
+set wildignore+=*.swp,*.un~,*.pyc,*/env/*
+
+" Python-mode
+let g:pybmode_virtualenv = 1
