@@ -82,3 +82,9 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
+[submodule "bundle/python-syntax"]
+	path = bundle/python-syntax
+	url = git://github.com/hdima/python-syntax.git
+[submodule "bundle/vim-kolor"]
+	path = bundle/vim-kolor
+	url = git://github.com/zeis/vim-kolor.git
