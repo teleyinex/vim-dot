@@ -11,7 +11,7 @@ filetype plugin indent on
 set nocompatible
 
 set background=dark
-colorscheme solarized
+colorscheme kolor
 set t_Co=256
 
 set tabstop=4
@@ -87,3 +87,9 @@ set wildignore+=*.swp,*.un~,*.pyc,*/env/*
 
 " Python-mode
 let g:pybmode_virtualenv = 1
+
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
+
+" NERDTree
+nnoremap <F4> :NERDTree<CR>
